@@ -2,3 +2,15 @@
 layout: default
 title: Most Recent Posts
 ---
+<h1>{{ page.title }}</h1>
+<main>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url | prepend: site.base_url }}">Read the full post</a>
+      </li>
+    {% endfor %}
+  </ul>
+</main>

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
 <head>
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{{ page.title }} - {{ site.title }}</title>
 </head>
 <body>
-    <main>
-        {{ content }}
-    </main>
+    {% include header.html %}
+    {{ content }}
 </body>
 </html>
