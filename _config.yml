@@ -25,6 +25,9 @@ twitter_username: reccanti
 github_username:  reccanti
 language: en
 
+sass:
+  sass_dir: "./_scss"
+
 # Build settings
 markdown: kramdown
 
