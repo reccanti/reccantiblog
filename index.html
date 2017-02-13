@@ -9,7 +9,7 @@ title: Most Recent Posts
       <li>
         <h2>{{ post.title }}</h2>
         <p>{{ post.excerpt }}</p>
-        <a href="{{ post.url | prepend: site.base_url }}">Read the full post</a>
+        <a href="{{ post.url | prepend: site.url }}">Read the full post</a>
       </li>
     {% endfor %}
   </ul>
